@@ -10,6 +10,8 @@ Para resolver una instancia específica del N-Puzzle, ejecuta el script principa
 
 python npuzzle_solver_2.py ruta/al/archivo.txt
 
+Ejemplo: python npuzzle_solver_2.py tablero.txt (si el .txt está en el mismo directorio que el programa) 
+
 
 Formato del archivo txt:
 
