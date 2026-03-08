@@ -1,8 +1,8 @@
 Solucionador N-Puzzle (IDA*) y Análisis Empírico
 
-Este repositorio contiene un motor de resolución de alto rendimiento para el clásico problema del N-Puzzle (desde $3\times3$ hasta $8\times8$), implementado en Python puro.
+Este repositorio contiene un motor de resolución de alto rendimiento para el clásico problema del N-Puzzle (desde 3x3 hasta 8x8), implementado en Python puro.
 
-Utiliza el algoritmo de búsqueda IDA* (Iterative Deepening A*) enriquecido con una Búsqueda Tabú Activa y una heurística híbrida admisible (Distancia Manhattan Incremental en $O(1)$ + Conflictos Lineales). Además, incluye un entorno de pruebas masivas (experiment_runner.py) capaz de generar miles de instancias, resolverlas y generar análisis estadísticos automáticos.
+Utiliza el algoritmo de búsqueda IDA* (Iterative Deepening A*) enriquecido con una Búsqueda Tabú Activa y una heurística híbrida admisible (Distancia Manhattan Incremental en O(1) + Conflictos Lineales). Además, incluye un entorno de pruebas masivas (experiment_runner.py) capaz de generar miles de instancias, resolverlas y generar análisis estadísticos automáticos.
 
  Uso del Solucionador (npuzzle_solver.py)
 
@@ -15,11 +15,11 @@ Ejemplo: python npuzzle_solver_2.py tablero.txt (si el .txt está en el mismo di
 
 Formato del archivo txt:
 
-Línea 1: Dimensión $N$ del tablero.
+Línea 1: Dimensión N del tablero.
 
-Siguientes $N$ líneas: Tablero inicial (valores separados por comas, 0 = espacio vacío).
+Siguientes N líneas: Tablero inicial (valores separados por comas).
 
-Siguientes $N$ líneas: Tablero meta.
+Siguientes N líneas: Tablero meta.
 
 Entorno de Análisis Empírico (experiment_runner.py)
 
@@ -60,7 +60,7 @@ Gráficas Analíticas Generadas
 
 2_estadistico_soluciones.png: Gráfico de barras apiladas que contrasta la tasa de tableros Resueltos frente a los que alcanzaron el límite de tiempo (Timeout).
 
-3_nodos_visitados.png: Gráfico de líneas detallando la cantidad de nodos visitados en función de $N$ (escala logarítmica).
+3_nodos_visitados.png: Gráfico de líneas detallando la cantidad de nodos visitados en función de N (escala logarítmica).
 
 4_movimientos.png: Violin plot que muestra la distribución de la longitud de la solución (cantidad de pasos requeridos) según la dificultad.
 
